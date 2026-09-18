@@ -15,3 +15,16 @@ document.querySelectorAll("#mobileMenu a").forEach(link => {
         mobileMenu.classList.add("hidden");
     });
 });
+
+
+// Toggle menu when clicking the hamburger icon
+menuButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+
+// Close mobile menu automatically after clicking a link
+document.querySelectorAll("#mobileMenu a").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+    });
+});
